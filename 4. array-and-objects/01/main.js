@@ -1,3 +1,10 @@
+var myPenguin = {
+    name: 'Onk Beakman',
+    orign: 'Skylanders',
+    author: 'Kevin Scott',
+}
+
+// Solutions
 
 myPenguin.favoriteFoods = ['fish','eggs', 'stake ;)' ];
 
@@ -15,13 +22,4 @@ var lastFavFood = myPenguin.favoriteFoods[myPenguin.favoriteFoods.length - 1];
  
 for (let f = 0; f <= myPenguin.favoriteFoods.length - 1; f++) {
     console.log(myPenguin.favoriteFoods[f])
-}
-
-
-
-
-var myPenguin = {
-    name: 'Onk Beakman',
-    orign: 'Skylanders',
-    author: 'Kevin Scott',
 }
