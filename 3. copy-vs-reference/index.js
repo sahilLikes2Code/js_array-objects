@@ -1,31 +1,37 @@
 // Value of x, y, a, b
 
-var x = 10;
-var y = "abc";
-var a = x;
-var b = y;
+var x = 10; //10
+var y = "abc"; //"abc"
+var a = x; //10
+var b = y; //"abc"
 
 // Value of x, y, a, b
-var x = 10;
-var y = "abc";
+var x = 10;  // 10
+var y = "abc"; //"abc"
 var a = x;
 var b = y;
-a = 5;
-b = "def";
+a = 5; //5
+b = "def"; //"def"
 
 // Value of arr & arrCopy
-var arr = [1];
+var arr = [1];  
 var arrCopy = arr;
-arr.push(2);
+arr.push(2); 
+arr //Array[1, 2]
+arrCopy = arr; //Array[1, 2]
 
 // Value of obj
 var obj = { name: "ryan" };
 obj = { surname: "florance" };
+obj; //Object{ name: "ryan", surname: "florance"}
 
 // What's the output.
 var arr = ["Hi"];
 var arr2 = arr;
 console.log(arr === arr2);
+
+// Answer: true
+
 
 // What's the output.
 var arr1 = ["Hi!"];
@@ -33,11 +39,16 @@ var arr2 = ["Hi!"];
 console.log(arr1 === arr2);
 console.log(arr == arr2);
 
+// Answer: false
+// Answer: false
+
+
 //What's the output
 console.log([10] === [10]);
+// Answer: false
+
 
 // What's the output?
-
 function personDetails(person) {
   person.age = 25;
   person = {
@@ -52,8 +63,8 @@ var personObj1 = {
   age: 30
 };
 var personObj2 = personDetails(personObj1);
-console.log(personObj1); // -> ?
-console.log(personObj2); // -> ?
+console.log(personObj1); // -> ? Object {  name: "Alex", age: 30}
+console.log(personObj2); // -> ? Object {  name: "John", age: 50}
 
 // Guess the output
 var oldArray = [];
@@ -61,20 +72,21 @@ var object = {};
 object.newArray = oldArray;
 oldArray.push(10);
 console.log(object.newArray === oldArray);
+// true {whyy?}
 
 // Guess the output
 var a = 5;
 var b = a;
 a = 10;
-console.log(a);
-console.log(b);
+console.log(a);  //10
+console.log(b); //5
 
 // What's the output?
 var a = {};
 var b = a;
 a.a = 1;
-console.log(a);
-console.log(b);
+console.log(a); // Object { a: 1 }
+console.log(b); //Object { a: 1 }
 
 // What's the output.
 var a = [];
@@ -82,7 +94,7 @@ var b = a;
 a.push(1);
 console.log(a); // [1]
 console.log(b); // [1]
-console.log(a === b);
+console.log(a === b); //true
 
 // Clone the object person in clone
 var person = {
@@ -95,3 +107,6 @@ var person = {
 };
 
 var clone = {};
+for (let key in person) {
+  clone[key] = person[key];
+}
