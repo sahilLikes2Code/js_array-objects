@@ -5,7 +5,7 @@
 var user = {};
 
 // 2. Add a key of `user name` and a value of `Black Panther` to that object.
-user["user name"] = 'Black Panther'
+user["user name"] = 'Black Panther';
 
 // 3. Using `console.log` log the value of `user name` key from the user object.
 console.log(user["user name"])
@@ -23,10 +23,10 @@ user["42"] = "The answer to the meaning of life 🧸.";
 console.log(user["42"]);
 
 // 8. Add a key in your object with the value of the variable `city`. The value of the key should be `true`.
-user.city = true;
+user.city = `true`;
 
 // 9. Uisng console.log log the value of the key defined above.
-user.city;
+console.log(user.city);
 
 // 10. Can you define a key of `let or var` in any object? Reason.
-Yes.
+Yes. Because JS allows you to do so ;). Besides they cannot be used to define a variable identifier as both these keywords are reserved in the language.

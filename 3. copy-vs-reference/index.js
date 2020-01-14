@@ -23,7 +23,7 @@ arrCopy = arr; //Array[1, 2]
 // Value of obj
 var obj = { name: "ryan" };
 obj = { surname: "florance" };
-obj; //Object{ name: "ryan", surname: "florance"}
+obj; //Object{ surname: "florance"}
 
 // What's the output.
 var arr = ["Hi"];
@@ -51,11 +51,12 @@ console.log([10] === [10]);
 // What's the output?
 function personDetails(person) {
   person.age = 25;
+  console.log(person.age);
   person = {
     name: "John",
     age: 50
   };
-
+  console.log(person.age);
   return person;
 }
 var personObj1 = {
@@ -63,8 +64,8 @@ var personObj1 = {
   age: 30
 };
 var personObj2 = personDetails(personObj1);
-console.log(personObj1); // -> ? Object {  name: "Alex", age: 30}
-console.log(personObj2); // -> ? Object {  name: "John", age: 50}
+console.log(personObj1); //  Object {  name: "Alex", age: 25}
+console.log(personObj2); //   Object {  name: "John", age: 50}
 
 // Guess the output
 var oldArray = [];
@@ -72,7 +73,7 @@ var object = {};
 object.newArray = oldArray;
 oldArray.push(10);
 console.log(object.newArray === oldArray);
-// true {whyy?}
+// true
 
 // Guess the output
 var a = 5;
